@@ -5,13 +5,19 @@
     font-family: "Fira Code", monospace;
 
 }
+
 @font-face {
-    font-family: "coustom_font";
-    src: url("../font/CurlyFleurCaps.ttf");
+    font-family: "AUTOBAHN";
+    src: url("../font/AUTOBAHN.TTF");
+}
+
+@font-face {
+    font-family: "inkswipe";
+    src: url("../font/inkswipe.ttf");
 }
 
 body {
-    max-width: 1024px;
+    max-width: 1275px;
     margin: 0 auto;
 }
 
@@ -22,23 +28,80 @@ body {
 }
 
 .nav_container h1 {
-    font-family: "coustom_font";
+    font-family: "AUTOBAHN";
     font-size: 32px;
     font-weight: 700;
     color: rgba(255, 0, 0, 0.774);
     text-transform: uppercase;
 }
-.nav_container h1 span{
-     text-transform: uppercase;
+
+.nav_container h1 span {
+    text-transform: uppercase;
     font-family: "coustom_font";
     color: green;
 }
-.nav_container .nav_content button{
+
+.nav_container .nav_content button {
     font-size: 18px;
-    color:rgba(0, 106, 80, 1) ;
+    color: rgba(0, 106, 80, 1);
     font-weight: 600;
     padding: 10px 15px;
     border: 1px solid rgba(0, 106, 80, 1);
     border-radius: 8px;
 
 }
+
+/* bannner section css start */
+.banner_container {
+    display: flex;
+    align-items: center;
+    background: rgba(198, 228, 214, 1);
+    margin: 20px 0 80px 0;
+    padding: 80px 100px;
+    border-radius: 25px;
+}
+
+.banner_container .banner_content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(14, 14, 14, 0.5);
+}
+
+.banner_container .banner_content h1 {
+    font-family: "inkswipe";
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(28, 32, 36);
+}
+
+.banner_container .banner_content button {
+    padding: 8px 10px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 128, 0, 0.705);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner_container .banner_content button:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner_img {
+    position: relative;
+    display: inline-block;
+}
+
+.banner_img img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.banner_img img:hover {
+    transform: scale(1.1);
+}
+
+/* bannner section css end */
