@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Fira Code", monospace;
+
+}
+@font-face {
+    font-family: "coustom_font";
+    src: url("../font/CurlyFleurCaps.ttf");
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.nav_container h1 {
+    font-family: "coustom_font";
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.774);
+    text-transform: uppercase;
+}
+.nav_container h1 span{
+     text-transform: uppercase;
+    font-family: "coustom_font";
+    color: green;
+}
+.nav_container .nav_content button{
+    font-size: 18px;
+    color:rgba(0, 106, 80, 1) ;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 106, 80, 1);
+    border-radius: 8px;
+
+}
